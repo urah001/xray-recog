@@ -8,6 +8,7 @@ __pycache__/
 
 # dataset
 /backend/dataset
+/backend/all
 
 # models and big files
 /backend/xray_model.h5

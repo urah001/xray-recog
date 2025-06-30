@@ -1,0 +1,7 @@
+Cardiomegaly
+Fracture
+Normal
+Other
+Pneumonia
+Pneumothorax
+PulmonaryEdema

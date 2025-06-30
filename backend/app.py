@@ -8,11 +8,18 @@ from PIL import Image
 model = tf.keras.models.load_model('xray_model.keras')
 
 # Class labels (should match your training classes)
-class_labels = ['Normal', 'Brachymetatarsia', 'FemoralFracture', 'HipFracture','Cardiomegalymild','NormalChest']  
+# Load class labels
+with open("class_labels.txt", "r") as f:
+    class_labels = [line.strip() for line in f]
+ 
 # Change as per your dataset
 
 # Function to preprocess and predict
 def predict_xray(img):
+    
+    if img.mode != 'RGB':
+        img = img.convert('RGB')
+        
     img = img.resize((224, 224))
     img_array = image.img_to_array(img) / 255.0
     img_array = np.expand_dims(img_array, axis=0)
@@ -24,7 +31,7 @@ def predict_xray(img):
 
 # Streamlit UI
 st.title("X-ray Disease Detection App")
-st.write("Upload an X-ray image to predict possible diseases.")
+st.write("Upload an X-ray image to predict the diseases from the picture.")
 
 uploaded_file = st.file_uploader("Choose an X-ray image...", type=["jpg", "jpeg", "png"])
 

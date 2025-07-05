@@ -29,3 +29,5 @@ add a image from the imageDataset and predict
  Pneumonia
  Pneumothorax
  PulmonaryEdema
+
+ model uses the train/val folder name to train and give prediction , make sure the folder you are getting from is the right one 

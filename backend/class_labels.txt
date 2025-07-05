@@ -1,7 +1,16 @@
+BoneFracture
+BrainTumor
 Cardiomegaly
 Fracture
+HealthyBrain
+NoCovid
+NoPesplanus
 Normal
-Other
 Pneumonia
 Pneumothorax
 PulmonaryEdema
+Tuberculosis
+covid
+covid19
+normalChest
+pesplanus

@@ -7,7 +7,6 @@ from PIL import Image
 # Load the trained model
 model = tf.keras.models.load_model('xray_model.keras')
 
-# Class labels (should match your training classes)
 # Load class labels
 with open("class_labels.txt", "r") as f:
     class_labels = [line.strip() for line in f]

@@ -31,3 +31,15 @@ add a image from the imageDataset and predict
  PulmonaryEdema
 
  model uses the train/val folder name to train and give prediction , make sure the folder you are getting from is the right one 
+ the model is baised because of the small image 
+
+# works
+ frature works well
+ pesplanus 
+
+# doesnt predict well
+Cardiomegalymild
+
+# remember 
+add more picture , sicknesses with little image doesnt predict well
+some images can be found in two places 

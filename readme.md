@@ -41,5 +41,10 @@ add a image from the imageDataset and predict
 Cardiomegalymild
 
 # remember 
-add more picture , sicknesses with little image doesnt predict well
-some images can be found in two places 
+> add more picture 
+
+> sicknesses with little image doesnt predict well
+
+> some images can be found in two places 
+
+* The system achieves acceptable results, with some misclassifications likely due to class imbalance and data limitations. Performance can be improved with more data, fine-tuning, and extended training epochs.
